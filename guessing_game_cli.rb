@@ -20,7 +20,7 @@ end
 def get_game_results (computer, user)
   if user == "exit" or user == "e"
     puts "Goodbye!"
-  elsif user.to_s == computer.to_s
+  elsif user == computer
     puts "You guessed the correct number!"
   else
     puts "Sorry! The computer guessed #{computer}."
@@ -32,6 +32,6 @@ def run_guessing_game
   computer = computers_random_number
   puts "(#{computer})"
   print_options
-  user = get_user_command
+  user = get_user_command.to_i
   get_game_results(computer, user)
 end
