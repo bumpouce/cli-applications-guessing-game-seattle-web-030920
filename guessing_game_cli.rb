@@ -22,8 +22,8 @@ def get_game_results (computer, user)
     puts "Goodbye!"
 #  elsif user == computer
 #    puts "You guessed the correct number!"
-#  else
-#    puts "Sorry! The computer guessed #{computer}."
+  else
+    puts "Sorry! The computer guessed #{computer}."
   end
 end
 
