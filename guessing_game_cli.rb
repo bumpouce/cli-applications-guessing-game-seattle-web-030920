@@ -30,6 +30,7 @@ end
 def run_guessing_game
   welcome
   computer = computers_random_number
+  puts "(#{computer})"
   print_options
   user = get_user_command
   get_game_results(computer, user)
