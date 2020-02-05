@@ -23,16 +23,16 @@ def get_game_results (computer, user)
   elsif user == computer
     puts "You guessed the correct number!"
   else
-    puts "You guessed #{user}, but the computer chose #{computer}."
+    puts "Sorry! The computer guessed #{computer}."
   end
 end
 
 def run_guessing_game
   welcome
-  computer = computers_random_number
-  binding.pry
-  print_options
-  user = get_user_command
-  binding.pry
-  get_game_results (computer, user)
+#  computer = computers_random_number
+#  binding.pry
+#  print_options
+#  user = get_user_command
+#  binding.pry
+#  get_game_results (computer, user)
 end
