@@ -28,7 +28,7 @@ def get_game_results (computer, user)
 end
 
 def run_guessing_game
-  welcome
+#  welcome
   computer = computers_random_number
   binding.pry
 #  print_options
