@@ -30,7 +30,7 @@ end
 def run_guessing_game
   welcome
   computer = computers_random_number
-#  binding.pry
+  binding.pry
 #  print_options
 #  user = get_user_command
 #  binding.pry
