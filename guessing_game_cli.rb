@@ -20,10 +20,10 @@ end
 def get_game_results (computer, user)
   if user == "exit" or user == "e"
     puts "Goodbye!"
-  elsif user == computer
-    puts "You guessed the correct number!"
-  else
-    puts "Sorry! The computer guessed #{computer}."
+#  elsif user == computer
+#    puts "You guessed the correct number!"
+#  else
+#    puts "Sorry! The computer guessed #{computer}."
   end
 end
 
