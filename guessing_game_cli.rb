@@ -1,3 +1,5 @@
+require 'pry'
+
 def welcome
   puts "Welcome to the guessing game!"
 end
@@ -18,8 +20,19 @@ end
 def get_game_results (computer, user)
   if user == "exit" or user == "e"
     puts "Goodbye!"
-  elsif 
+  elsif user == computer
+    puts "You guessed the computer's number!"
+  else
+    puts "You guessed #{user}, but the computer chose #{computer}."
+  end
 end
 
 def run_guessing_game
+  welcome
+  computer = computers_random_number
+  binding.pry
+  print_options
+  user = get_user_command
+  binding.pry
+  get_game_results (computer, user)
 end
