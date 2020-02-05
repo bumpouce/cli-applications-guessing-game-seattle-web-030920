@@ -34,5 +34,5 @@ def run_guessing_game
 #  print_options
 #  user = get_user_command
 #  binding.pry
-  get_game_results (6, 4)
+  get_game_results (computer, user)
 end
